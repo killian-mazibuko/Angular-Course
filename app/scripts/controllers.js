@@ -144,7 +144,7 @@ angular.module('confusionApp')
                         $scope.messageForPromotionSection = "Error: " + response.status + " " + response.statusText;
                     }
                 );
-            $scope.executiveChef = corporateFactory.getLeaders().get({index:0})
+            $scope.executiveChef = corporateFactory.getLeaders().get({index:3})
                 .$promise.then(
                     function(response) {
                         $scope.executiveChef = response;

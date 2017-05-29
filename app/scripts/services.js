@@ -8,7 +8,7 @@ angular.module('confusionApp')
                 return $resource(baseURL + "dishes/:id", null,{'update':{method:'PUT'}});
             };
 
-            this.getPromotion = function(index) {
+            this.getPromotion = function() {
                 return $resource(baseURL + "promotions/:index", null,{'update':{method:'PUT'}});
             };
                         
@@ -30,15 +30,7 @@ angular.module('confusionApp')
         this.getFeedback = function(){
 
             return $resource(baseURL + "feedback/:index", null,{'update':{method:'PUT'}});
-
         };
-
-        // implement a function named getPromotion
-        // that returns a selected promotion.
-        this.getPromotion = function(index) {
-            return $resource(baseURL + "promotions/:index", null,{'update':{method:'PUT'}});
-        };
-
     }])
 
 ;
